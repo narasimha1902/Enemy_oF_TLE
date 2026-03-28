@@ -1,7 +1,8 @@
 # 💀 EnemyOfTLE
-![GitHub Repo stars](https://img.shields.io/github/stars/your-username/EnemyOfTLE?style=social)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/EnemyOfTLE)
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/EnemyOfTLE)
+![GitHub Repo stars](https://img.shields.io/github/stars/narasimha1902/Enemy_oF_TLE?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/narasimha1902/Enemy_oF_TLE)
+![GitHub repo size](https://img.shields.io/github/repo-size/narasimha1902/Enemy_oF_TLE)
+
 
 ⚡ Writing optimized solutions that beat time limits
 🧠 Focused on patterns, not just problems
