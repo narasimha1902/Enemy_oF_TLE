@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write   # 🔥 IMPORTANT FIX
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -13,7 +16,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Update README timestamp
+      - name: Update README
         run: |
           echo "Last Updated: $(date)" >> README.md
 
@@ -22,5 +25,5 @@ jobs:
           git config --global user.name "narasimha1902"
           git config --global user.email "narasimha1902@users.noreply.github.com"
           git add .
-          git commit -m "Auto update README"
+          git commit -m "Auto update README" || echo "No changes"
           git push
