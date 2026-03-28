@@ -36,6 +36,14 @@ This repository contains my LeetCode solutions with:
 
 ---
 
+## 📊 Progress
+
+- ✅ Solved 216+ problems on LeetCode
+- 🚀 Now actively maintaining solutions here
+
+> Note: Repository contains my latest and best approaches.
+---
+
 ## 🔥 Goal
 - Solve LeetCode consistently  
 - Master DSA patterns  
