@@ -1,15 +1,15 @@
 class Solution:
     def minAbsoluteDifference(self, nums: list[int]) -> int:
-        f={}
-        ans=-1
+        l1=l2=-1
+        ans=float('inf')
         n=len(nums)
         for i in range(n):
             if nums[i]==2:
-                if 1 in f:
-                    ans=abs(i-f[1]) if ans==-1 else min(ans,abs(i-f[1])) 
-                f[2]=i
+                l2=i
+                if l1!=-1:
+                    ans=min(ans,i-l1)
             if nums[i]==1:
-                if 2 in f:
-                    ans=abs(i-f[2]) if ans==-1 else min(ans,abs(i-f[2]))
-                f[1]=i
-        return ans
+                l1=i
+                if l2!=-1:
+                    ans=min(ans,i-l2)
+        return ans if ans!=float('inf') else -1
