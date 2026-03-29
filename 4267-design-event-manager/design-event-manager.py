@@ -6,7 +6,8 @@ class EventManager:
         self.h=[]
         for e,p in events:
             self.f[e]=p
-            heapq.heappush(self.h,(-p,e))
+            self.h.append((-p,e))
+        heapq.heapify(self.h)
     def updatePriority(self, eventId: int, newPriority: int) -> None:
         self.f[eventId]=newPriority
         heapq.heappush(self.h, (-newPriority, eventId))
