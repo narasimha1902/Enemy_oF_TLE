@@ -37,9 +37,9 @@ This repository contains my solutions to LeetCode problems with:
 
 | Difficulty | Count |
 | ---------- | ----- |
-| 🟢 Easy    | 115   |
-| 🟡 Medium  | 98    |
-| 🔴 Hard    | 4     |
+| 🟢 Easy    | 120   |
+| 🟡 Medium  | 103   |
+| 🔴 Hard    | 5     |
 
 ---
 
