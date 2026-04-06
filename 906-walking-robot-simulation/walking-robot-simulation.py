@@ -15,8 +15,7 @@ class Solution:
                 for _ in range(i):
                     if (x+dx,y+dy) in obs:
                         break
-                    else:
-                        x+=dx
-                        y+=dy
-                        ans=max(ans,x*x+y*y)
+                    x+=dx
+                    y+=dy
+                ans=max(ans,x*x+y*y)
         return ans
