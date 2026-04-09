@@ -5,5 +5,11 @@ class Solution:
         a=nums[0]
         b=nums[1]
         c=nums[2]
-        return a+b+c-min(a,b,c)-max(a,b,c)
+        if a<b<c or c<b<a:
+            return b
+        elif a<c<b or b<c<a:
+            return c
+        else:
+            return a
+
         
