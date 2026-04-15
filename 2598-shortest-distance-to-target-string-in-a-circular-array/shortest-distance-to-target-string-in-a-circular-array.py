@@ -1,22 +1,11 @@
 class Solution:
     def closestTarget(self, words: List[str], target: str, st: int) -> int:
-        f={}
+        n=len(words)
+        ans=float('inf')
         for idx,i in enumerate(words):
-            if i in f:
-                f[i].append(idx)
-            else:
-                f[i]=[idx]
-        if target in f:
-            ans=float('inf')
-            n=len(words)
-            for i in f[target]:
-                if i==st:
+            if target==i:
+                if idx==st:
                     return 0
-                elif i<st:
-                    ans=min(ans,st-i,n-st+i)
-                else:
-                    ans=min(ans,i-st,n+st-i)
-            return ans
-        else:
-            return -1
+                ans=min(ans,abs(idx-st),n-abs(st-idx))
+        return ans if ans!=float('inf') else -1
         
