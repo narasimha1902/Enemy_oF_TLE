@@ -9,9 +9,9 @@ class Solution:
             return res
         f={}
         n=len(nums)
-        ans=10**6
+        ans=float('inf')
         for i in range(n):
             if nums[i] in f:
                 ans=min(ans,abs(f[nums[i]]-i))
             f[mp(nums[i])]=i
-        return -1 if ans==10**6 else ans
+        return -1 if ans==float('inf') else ans
